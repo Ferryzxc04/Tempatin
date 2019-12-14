@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/asset2">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="106dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="logo"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/buatAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="208dp"
+            android:text="Buat Akun"
+            android:textColor="#D18A00"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            tools:ignore="HardcodedText" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputNamaDepan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            android:theme="@style/textLabel"
+            app:layout_constraintTop_toBottomOf="@id/buatAkun">
+
+            <EditText
+                android:id="@+id/inputNamaDepan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Depan"
+                android:inputType="text"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputNamaBelakang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:theme="@style/textLabel"
+            app:layout_constraintTop_toBottomOf="@id/inputNamaDepan">
+
+            <EditText
+                android:id="@+id/inputNamaBelakang1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Nama Belakang"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="@id/inputEmail"
+                app:layout_constraintTop_toBottomOf="@id/inputEmail"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:theme="@style/textLabel"
+            app:layout_constraintTop_toBottomOf="@id/inputNamaBelakang">
+
+            <EditText
+                android:id="@+id/inputEmail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintStart_toStartOf="@id/inputEmail"
+                app:layout_constraintTop_toBottomOf="@id/inputEmail"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:theme="@style/textLabel"
+            app:layout_constraintTop_toBottomOf="@id/inputEmail"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/inputPass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="@id/inputEmail"
+                app:layout_constraintTop_toBottomOf="@id/inputEmail"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_fill_button"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/inputPass"
+            app:layout_constraintStart_toStartOf="@id/inputPass"
+            app:layout_constraintTop_toBottomOf="@id/inputPass"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="Sudah punya akun?"
+            app:layout_constraintEnd_toEndOf="@id/register"
+            app:layout_constraintStart_toStartOf="@id/register"
+            app:layout_constraintTop_toBottomOf="@id/register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="HardcodedText"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textColor="@color/textHint"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/text"
+            app:layout_constraintStart_toEndOf="@id/text"
+            app:layout_constraintTop_toTopOf="@id/text"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

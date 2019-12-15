@@ -4,7 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.annotations.SerializedName;
 
 
-public class InsertRegister {
+public class responseAuth {
     @SerializedName("status")
     String status;
     @SerializedName("pesan")

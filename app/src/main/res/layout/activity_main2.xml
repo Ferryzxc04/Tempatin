@@ -57,6 +57,13 @@
                 tools:ignore="Autofill,HardcodedText,LabelFor" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/inputNamaDepan"
+            android:id="@+id/errorInputNamaDepan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputNamaBelakang"
             android:layout_width="match_parent"
@@ -79,6 +86,12 @@
                 tools:ignore="Autofill,HardcodedText,LabelFor" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/inputNamaBelakang"
+            android:id="@+id/errorInputNamaBelakang1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputEmail"
             android:layout_width="match_parent"
@@ -100,6 +113,13 @@
                 app:layout_constraintTop_toBottomOf="@id/inputEmail"
                 tools:ignore="Autofill,HardcodedText,LabelFor" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+            android:id="@+id/errorInputEmail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputPass"
@@ -124,6 +144,12 @@
                 tools:ignore="Autofill,HardcodedText,LabelFor" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/inputPass"
+            android:id="@+id/errorInputPass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
         <Button
             android:id="@+id/register"
